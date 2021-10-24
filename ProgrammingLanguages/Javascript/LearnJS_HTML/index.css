@@ -1,0 +1,38 @@
+
+/**
+ * 1. Inline css happen first - things with <stlye> tag in .html file
+ * 2. More specific things will apply - talking to button > talking to everything
+ *   2.1 IF happen to has same specificity twice, latest thing will apply.
+ *
+ */
+
+* {
+/* 
+ * "*" character is selector that selects all element in page
+ * more info: https://www.w3schools.com/cssref/css_selectors.asp
+ */ 
+    background-color: rgb(186, 231, 216);
+}
+
+button {
+    background-color: cornflowerblue !important; /*This will guarantee happens*/
+}
+
+button {
+    background-color: crimson; /* This will not override anything cus another one has "!important"*/
+}
+
+/*Getting html class from .*/
+.food {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/*Getting html id from #special tag*/
+#special {
+    color: rgb(218, 185, 80);
+    font-size: large;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(77, 77, 77);
+}
