@@ -1,0 +1,119 @@
+/* === CSS selectors ===
+ *no prefixes - will be html tag's name
+ *[.] - class prefix
+ *[#] - id prefix
+ */
+
+
+body { /* yes */
+    background-color: rgb(138, 240, 197);
+}
+
+/**
+ * - [!inportant] variable will override everything,
+ * - inline-styling will override id,
+ * - id will override class,
+ * - class will override html-tag
+ *
+ * html-tags < class < id < inline-styling < !important
+ */
+
+.the-class {
+    color: rebeccapurple;
+}
+
+#about-me {
+    color: gray;
+}
+
+h2 {
+    color: red;
+}
+
+/**Psuedo selector**/
+
+h2:hover {
+    color: aliceblue;
+}
+
+li:nth-child(2) {
+    color: salmon;
+}
+
+#google-link:link {
+    color: blue;
+}
+
+#google-link:visited {
+    color: purple;
+}
+
+
+/**=== Advanced selectors ===**/
+
+/*every a tag that follow h2*/
+h2 + a {
+   color: red;
+}
+
+/*every buttom that is followed or after the text area thats in the same parent*/
+textarea ~ button {
+    color:blueviolet;
+    font-weight: 1000;
+}
+
+/*every single li inside the ul*/
+ul > li {
+    color: blue;
+}
+
+/*decendent selector, child selector*/
+/*every li that is a child of ol*/
+ol li {
+    color: greenyellow;
+}
+
+/*=== Attributes Selectors ===*/
+
+/**<tag>[attributes = value]
+ *select anithng base on the attributes
+ */
+h2[class=about-me] {
+    color: rgb(163, 172, 83);
+}
+
+/**
+ * [=] direct equal, needs to be equal
+ * [^=] contain or startswith
+ * [$=] make sure that source attribute ENDS with this value
+ * [*=] is it contains it ANYWHERE in the value
+ */
+
+/*every single image where src contain/startswith this piece of infomation*/
+img[src^="../img/"] {
+    border: 10px solid black;
+}
+
+h2[class~="subtitle"] {
+    background-color: antiquewhite;
+}
+
+/*find every h2 which class is either equal directly "subtitle-aboutme" or subtitle*/
+h2[class|="subtitle-aboutme"] {
+    background-color: antiquewhite;
+}
+
+/* === CSS General rules === */
+
+/*
+    1. selector - attribute selector, properties selector
+    2. css block - curly braces {...}
+    3. properties and value - property and value that depends on each other
+    
+<example>
+selector {
+    property: value;
+    property_2: valye_2;
+}
+</example>
+*/

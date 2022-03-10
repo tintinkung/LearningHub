@@ -1,0 +1,79 @@
+/* === Css color types === */
+
+/**
+ * 0. CSS color code
+ * - built in css color name to indecate color
+ * - ex. the word "white" will show shite color
+ *
+ * 1. HEX code
+ * - #(0 - 9, a - f)
+ * - #with 6 digits code, seperated to 3 different pair, 
+ *      first pair is red then green, blue
+ * - ex. #ffffff => #ff ff ff => all red all green all blue => white
+ *
+ * 2. RGB code
+ * - rgb*a(red, green, blue, *alpha)
+ * - ex. rgb(255, 255, 255, 255) => all red, green, blue, full opaque => white
+ *
+ */
+
+#title {
+   color: aquamarine;
+}
+
+.subtitle {
+    color: aliceblue;
+}
+
+/* === Background properties === */
+
+body {
+    background-color: cornflowerblue;
+    background-image: url(https://steamuserimages-a.akamaihd.net/ugc/874125464626347514/B1DC3E2417EC95E640C0FE5164ABC1CB68479379/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    color: aliceblue;
+    font-size: 2em;
+}
+
+#cat-image {
+    background-image: url(https://static.wikia.nocookie.net/dogelore/images/2/25/91SWP6J1fYCrPqrZtyA6Dx-E0A29TVanczrKQjId508.png/revision/latest?cb=20210106154843);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* === Gradients === */
+
+#dog-image {
+    /*linear gradient, way to make gradient color by ... to left/right/bottom/up */
+    background: linear-gradient(to bottom right, rgba(255, 127, 80, 0.45), rgba(166, 233, 42, 1));  
+}
+
+#dog-image-2 {
+    background: linear-gradient(146deg, rgba(166, 233, 42, 1), rgb(88, 119, 31));
+}
+
+#cat-image-2 {
+    background: radial-gradient(circle, red 20%, yellow 60%, rgba(253, 186, 0, 0.1) 85%, rgba(0,0,0,0) 100%);
+}
+
+/* ===== Font and Texts ===== */
+
+.link {
+    /* decorating texts */
+    text-decoration: none;  /* none - no underline on link
+                                underline - underline
+                                line-through - line through the text
+                                overline - line above the text
+                            */
+    font-size: 1.25em; /* make this 25% more that the default size */
+    color: chartreuse;
+    font-weight: 800; /* how bold of font, uasualy 100 - 800(by 100, 200, 400 etc,) *400 is normal range* */
+
+}
+
+.italic { /* Styling fonts */
+    font-style: italic; /* ex. now the "google" word from span tag will be italic */
+}
