@@ -1,3 +1,5 @@
+*local.*
+
 # Prerequisites
 *.d
 
@@ -40,16 +42,25 @@ Debug/
 ### Reference: https://intellij-support.jetbrains.com/hc/en-us/articles/206544839
 
 # User-specific stuff:
-/**/.idea/**/workspace.xml
-/**/.idea/**/tasks.xml
-/**/.idea/**/dictionaries
-/**/.idea/**/vcs.xml
-/**/.idea/**/jsLibraryMappings.xml
-/**/.gitignore
+*.idea/**/workspace.xml
+*.idea/**/tasks.xml
+*.idea/**/dictionaries
+*.idea/**/vcs.xml
+*.idea/**/jsLibraryMappings.xml
 
-.xml
-
-/Java/LearnJava/**/.idea
+ProgrammingLanguages/Java/LearnJava/**/.idea/**workspace.xml
+ProgrammingLanguages/Java/LearnJava/**/.idea/**tasks.xml
+ProgrammingLanguages/Java/LearnJava/**/.idea/**dictionaries
+ProgrammingLanguages/Java/LearnJava/**/.idea/**vcs.xml
+ProgrammingLanguages/Java/LearnJava/**/.idea/**jsLibraryMappings.xml
+ProgrammingLanguages/Java/LearnJava/**/.idea/**misc.xml
+ProgrammingLanguages/Java/LearnJava/**/.idea/**encodings.xml
+ProgrammingLanguages/Java/LearnJava/**/.idea/**modules.xml
+ProgrammingLanguages/Java/LearnJava/**/.idea/**project-template.xml
+ProgrammingLanguages/Java/LearnJava/**/.idea/**description.html
+ProgrammingLanguages/Java/LearnJava/**/.idea/**discord.xml
+ProgrammingLanguages/Java/LearnJava/**/*.iml
+*.gitignore
 
 
 # AWS User-specific
